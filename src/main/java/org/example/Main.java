@@ -13,12 +13,5 @@ public class Main {
         for (String line : lines) {
             System.out.println(line);
         }
-        ArrayList<Integer> A = new ArrayList<Integer>();
-
-        for(int i = 0; i <10; i++){
-            A.add(0);
-        }
-        A.set(5,2);
-        A.set(2,1);
     }
 }
