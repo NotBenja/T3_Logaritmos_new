@@ -1,6 +1,6 @@
 # Tarea 3 : Filtro de Bloom
 
-Este proyecto contiene los archivos necesarios para poder utilizar el algoritmo de Dijkstra en un grafo no dirigido con peso usando dos variantes: Dijkstra con Heap y Dijkstra con Colas de Fibonacci.
+Este proyecto contiene los archivos necesarios para poder realizar búsqueda de tipo Grep de dos formas: Sin Filtro de Bloom y con Filtro de Bloom.
 
 ## Requisitos
 
