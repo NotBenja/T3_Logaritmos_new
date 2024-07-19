@@ -17,6 +17,7 @@ public class CsvWriter {
      */
     public void writeList(String filePath, List<String> givenList) {
 
+        //Transformamos el List<String> a List<String[]>
         List<String[]> data = new ArrayList<>();
 
         for (String s : givenList) {
@@ -24,20 +25,19 @@ public class CsvWriter {
             data.add(s2);
         }
 
-        // first create file object for file placed at location
-        // specified by filepath
+        //Creamos el archivo csv
         File file = new File(filePath);
 
         try {
-            // create FileWriter object with file as parameter
+            //Creamos un escritor sobre el archivo
             FileWriter outputFile = new FileWriter(file);
 
-            // create CSVWriter object filewriter object as parameter
+            //Transformamos a un escrito csv
             CSVWriter writer = new CSVWriter(outputFile);
 
             writer.writeAll(data);
 
-            // closing writer connection
+            //cerrando conexión con del archivo
             writer.close();
         }
         catch (IOException e) {
