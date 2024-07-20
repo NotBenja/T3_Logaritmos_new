@@ -119,8 +119,8 @@ public class Main {
         promedioTBloom = promedioTBloom/pruebas;
         promedioEBloom = Math.abs(p - (1 - promedioEBloom/pruebas));
 
-        String fileGrep = "Results/testGrep_"+Integer.toString(n)+"_"+Double.toString(p)+".txt";
-        String fileBloom = "Results/testBloom_"+Integer.toString(n)+"_"+Double.toString(p)+".txt";
+        String fileGrep = "Results/n"+Integer.toString(n)+"/testGrep_"+Integer.toString(n)+"_"+Double.toString(p)+".txt";
+        String fileBloom = "Results/n"+Integer.toString(n)+"/testBloom_"+Integer.toString(n)+"_"+Double.toString(p)+".txt";
 
         String timeGrep = "El proceso demoró: " + Double.toString(promedioTGrep)+"s" + " para p = "+ Double.toString(p);
         String timeBloom = "El proceso demoró: " + Double.toString(promedioTBloom)+"s"+ " para p = "+ Double.toString(p);

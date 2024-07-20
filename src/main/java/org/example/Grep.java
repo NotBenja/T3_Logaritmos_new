@@ -4,10 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.*;
 import java.io.*;
-// arg 0 es REGEX
-// arg 1 es archivo
-// ASUMIR QUE NO HAY ELEMENTOS REPETIDOS
+
+/**
+ * Clase que implementa las funcionalidades para hacer búsquedas de tipo grep.
+ */
 class Grep {
+    /**
+     * Busca en un archivo csv.
+     * @param regex el string a buscar
+     * @param filename el nombre del archivo csv
+     * @return si fue encontrado o no
+     */
     public Boolean search(String regex, String filename) {
         regex = "^" + regex + "$";
 
